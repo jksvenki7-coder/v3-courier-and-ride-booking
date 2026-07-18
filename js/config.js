@@ -1,105 +1,28 @@
-// =====================================
+// =======================================
 // V3 Group of Business
-// config.js
-// Version 1.0
-// =====================================
+// Firebase Config
+// =======================================
 
 const CONFIG = {
 
-    APP_NAME: "V3 Group of Business",
+  FIREBASE: {
 
-    APP_VERSION: "1.0.0",
+    apiKey: "AIzaSyCiyIESEz_Nb5EvpnoZwgwuP9L8AypibVQ",
 
-    COMPANY_NAME: "V3 Group of Business",
+    authDomain: "v3-courier-and-ride-booking.firebaseapp.com",
 
-    PHONE: "9030868681",
+    projectId: "v3-courier-and-ride-booking",
 
-    COUNTRY_CODE: "+91",
+    storageBucket: "v3-courier-and-ride-booking.firebasestorage.app",
 
-    WHATSAPP_NUMBER: "919030868681",
+    messagingSenderId: "43395093009",
 
-    SUPPORT_EMAIL: "support@v3group.in",
+    appId: "1:43395093009:web:81e3384971f425de5bd7b0",
 
-    CURRENCY: "INR",
+    measurementId: "G-HHEDR0DJC2"
 
-    CURRENCY_SYMBOL: "₹",
-
-    GOOGLE_MAPS_API_KEY: "YOUR_GOOGLE_MAPS_API_KEY",
-
-    FIREBASE: {
-
-        apiKey: "YOUR_API_KEY",
-
-        authDomain: "YOUR_PROJECT.firebaseapp.com",
-
-        projectId: "YOUR_PROJECT_ID",
-
-        storageBucket: "YOUR_PROJECT.appspot.com",
-
-        messagingSenderId: "YOUR_SENDER_ID",
-
-        appId: "YOUR_APP_ID"
-
-    },
-
-    BOOKING_STATUS: {
-
-        PENDING: "Pending",
-
-        ACCEPTED: "Accepted",
-
-        DRIVER_ASSIGNED: "Driver Assigned",
-
-        PICKED_UP: "Picked Up",
-
-        ON_THE_WAY: "On The Way",
-
-        DELIVERED: "Delivered",
-
-        COMPLETED: "Completed",
-
-        CANCELLED: "Cancelled"
-
-    },
-
-    SERVICES: [
-
-        "Parcel Delivery",
-
-        "Document Delivery",
-
-        "House Shifting",
-
-        "Product Delivery",
-
-        "Car Booking",
-
-        "Bike Booking",
-
-        "Auto Booking"
-
-    ],
-
-    PRICE: {
-
-        PARCEL: 80,
-
-        DOCUMENT: 50,
-
-        PRODUCT: 120,
-
-        BIKE: 100,
-
-        AUTO: 150,
-
-        CAR: 300,
-
-        HOUSE_SHIFTING: 1500
-
-    }
+  }
 
 };
-
-Object.freeze(CONFIG);
 
 export default CONFIG;

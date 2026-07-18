@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Track Booking | V3 Group of Business</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<img src="assets/logo.png" alt="Logo">
+
+<div>
+
+<h2>V3 Group of Business</h2>
+
+<p>Courier & Ride Booking</p>
+
+</div>
+
+</a>
+
+</div>
+
+</header>
+
+<section class="booking">
+
+<div class="container">
+
+<div class="profile-card">
+
+<h2>Track Your Booking</h2>
+
+<h3 id="bookingId">Booking ID</h3>
+
+<hr><br>
+
+<p><strong>Status :</strong>
+<span id="status">Loading...</span></p>
+
+<p><strong>Customer :</strong>
+<span id="customerName"></span></p>
+
+<p><strong>Mobile :</strong>
+<span id="mobile"></span></p>
+
+<p><strong>Service :</strong>
+<span id="service"></span></p>
+
+<p><strong>Vehicle :</strong>
+<span id="vehicle"></span></p>
+
+<p><strong>Pickup :</strong>
+<span id="pickup"></span></p>
+
+<p><strong>Drop :</strong>
+<span id="drop"></span></p>
+
+<p><strong>Estimated Price :</strong>
+₹<span id="price"></span></p>
+
+<br>
+
+<h3>Driver Details</h3>
+
+<p><strong>Name :</strong>
+<span id="driverName">Not Assigned</span></p>
+
+<p><strong>Mobile :</strong>
+<span id="driverMobile">--</span></p>
+
+<br>
+
+<div id="map"
+
+style="width:100%;height:350px;border-radius:15px;">
+
+</div>
+
+<br>
+
+<a
+id="callDriver"
+
+class="primary-btn"
+
+href="#">
+
+Call Driver
+
+</a>
+
+<br><br>
+
+<a
+id="whatsappDriver"
+
+class="secondary-btn"
+
+href="#"
+
+target="_blank">
+
+WhatsApp Driver
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container">
+
+<p style="text-align:center;">
+
+© 2026 V3 Group of Business
+
+</p>
+
+</div>
+
+</footer>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY">
+</script>
+
+<script type="module" src="js/tracking.js"></script>
+
+</body>
+
+</html>

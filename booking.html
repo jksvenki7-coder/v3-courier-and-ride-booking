@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Book Service | V3 Group of Business</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<img src="assets/logo.png" alt="Logo">
+
+<div>
+
+<h2>V3 Group of Business</h2>
+
+<p>Courier & Ride Booking</p>
+
+</div>
+
+</a>
+
+</div>
+
+</header>
+
+<section class="booking">
+
+<div class="container">
+
+<div class="profile-card">
+
+<h2>
+
+Book Your Service
+
+</h2>
+
+<form id="bookingForm">
+
+<input
+type="text"
+id="customerName"
+placeholder="Customer Name"
+readonly>
+
+<input
+type="text"
+id="mobile"
+placeholder="Mobile Number"
+readonly>
+
+<select id="service">
+
+<option value="">
+
+Select Service
+
+</option>
+
+<option>
+
+Parcel Delivery
+
+</option>
+
+<option>
+
+Document Delivery
+
+</option>
+
+<option>
+
+House Shifting
+
+</option>
+
+<option>
+
+Bike Ride
+
+</option>
+
+<option>
+
+Auto Ride
+
+</option>
+
+<option>
+
+Car Ride
+
+</option>
+
+</select>
+
+<textarea
+
+id="pickup"
+
+placeholder="Pickup Address">
+
+</textarea>
+
+<textarea
+
+id="drop"
+
+placeholder="Drop Address">
+
+</textarea>
+
+<input
+
+type="date"
+
+id="pickupDate">
+
+<input
+
+type="time"
+
+id="pickupTime">
+
+  <select id="vehicle">
+
+<option value="">
+
+Select Vehicle
+
+</option>
+
+<option value="Bike">
+
+Bike
+
+</option>
+
+<option value="Scooter">
+
+Scooter
+
+</option>
+
+<option value="Auto">
+
+Auto
+
+</option>
+
+<option value="Mini Van">
+
+Mini Van
+
+</option>
+
+<option value="Pickup Van">
+
+Pickup Van
+
+</option>
+
+<option value="Truck">
+
+Truck
+
+</option>
+
+<option value="Car">
+
+Car
+
+</option>
+
+</select>
+
+<textarea
+
+id="description"
+
+placeholder="Parcel / Ride Details">
+
+</textarea>
+
+<input
+
+type="number"
+
+id="estimatedPrice"
+
+placeholder="Estimated Price"
+
+readonly>
+
+<div style="display:flex;gap:15px;flex-wrap:wrap;">
+
+<button
+
+type="button"
+
+id="calculatePrice">
+
+Calculate Price
+
+</button>
+
+<button
+
+type="button"
+
+id="currentLocation">
+
+Use Current Location
+
+</button>
+
+</div>
+
+<br>
+
+<div id="map"
+
+style="width:100%;height:350px;border-radius:15px;">
+
+</div>
+
+<br>
+
+<button
+
+type="submit"
+
+id="bookNow">
+
+Book Now
+
+</button>
+
+</form>
+
+<br>
+
+<a
+
+id="whatsappBooking"
+
+href="#"
+
+target="_blank"
+
+class="primary-btn"
+
+style="display:block;text-align:center;">
+
+Book via WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container">
+
+<p style="text-align:center;">
+
+© 2026 V3 Group of Business
+
+</p>
+
+</div>
+
+</footer>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places">
+</script>
+
+<script type="module" src="js/booking.js"></script>
+
+</body>
+
+</html>
+
+  

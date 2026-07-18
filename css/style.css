@@ -1,0 +1,590 @@
+/* ==========================================
+   V3 Group of Business
+   style.css
+   Version 1.0
+========================================== */
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#f8f9fb;
+
+color:#222;
+
+overflow-x:hidden;
+
+line-height:1.6;
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+
+max-width:1400px;
+
+margin:auto;
+
+}
+
+/* Links */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* Images */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* Buttons */
+
+.primary-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#ff6b00;
+
+color:#fff;
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+background:#111;
+
+}
+
+.secondary-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+border:2px solid #ff6b00;
+
+color:#ff6b00;
+
+border-radius:8px;
+
+margin-left:15px;
+
+transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+background:#ff6b00;
+
+color:#fff;
+
+}
+
+/* Header */
+
+.header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.header .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+height:80px;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+width:60px;
+
+}
+
+.logo h2{
+
+font-size:22px;
+
+font-weight:700;
+
+color:#ff6b00;
+
+}
+
+.logo p{
+
+font-size:13px;
+
+color:#666;
+
+}
+
+/* Navigation */
+
+.navbar ul{
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
+}
+
+.navbar ul li a{
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.navbar ul li a:hover{
+
+color:#ff6b00;
+
+}
+
+.login-btn{
+
+background:#ff6b00;
+
+padding:10px 22px;
+
+border-radius:8px;
+
+color:#fff !important;
+
+}
+
+.login-btn:hover{
+
+background:#111;
+
+}
+
+/* Mobile Menu */
+
+.mobile-menu{
+
+display:none;
+
+font-size:28px;
+
+cursor:pointer;
+
+}
+
+/* Hero */
+
+.hero{
+
+padding:150px 0 80px;
+
+background:linear-gradient(135deg,#ffffff,#fff4eb);
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:60px;
+
+}
+
+.hero-left h1{
+
+font-size:55px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+color:#111;
+
+}
+
+.hero-left p{
+
+font-size:18px;
+
+color:#666;
+
+margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+margin-bottom:35px;
+
+}
+
+.hero-features{
+
+display:flex;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.hero-features div{
+
+background:#fff;
+
+padding:15px 20px;
+
+border-radius:10px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+font-weight:500;
+
+}
+
+.hero-features i{
+
+color:#ff6b00;
+
+margin-right:8px;
+
+font-size:18px;
+
+}
+
+.hero-right img{
+
+width:100%;
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+/* ==========================================
+   SERVICES
+========================================== */
+
+.services{
+
+padding:90px 0;
+
+background:#ffffff;
+
+}
+
+.services h2{
+
+text-align:center;
+
+font-size:42px;
+
+margin-bottom:15px;
+
+font-weight:700;
+
+}
+
+.services p{
+
+text-align:center;
+
+color:#666;
+
+margin-bottom:50px;
+
+}
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+text-align:center;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.service-card i{
+
+font-size:50px;
+
+color:#ff6b00;
+
+margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.service-card p{
+
+color:#666;
+
+font-size:15px;
+
+}
+
+/* ==========================================
+   WHY US
+========================================== */
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.contact h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.contact-grid div{
+    background:#f8f9fb;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:16px;
+}
+
+.contact i{
+    color:#ff6b00;
+    margin-right:10px;
+}
+
+/* ==========================================
+   BOOKING FORM
+========================================== */
+
+.booking{
+    padding:100px 0;
+}
+
+.booking form{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.booking input,
+.booking select,
+.booking textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.booking textarea{
+    resize:vertical;
+}
+
+.booking button{
+    width:100%;
+    padding:16px;
+    background:#ff6b00;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking button:hover{
+    background:#111;
+}
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile-card{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.profile-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #ff6b00;
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+table th{
+    background:#ff6b00;
+    color:#fff;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+table tr:hover{
+    background:#f8f9fb;
+}
+
+/* ==========================================
+   MAP
+========================================== */
+
+#map{
